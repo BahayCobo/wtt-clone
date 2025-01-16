@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.variable} antialiased bg-slate-950`}>
         <Header />
-        {children}
+        <main className="w-full">{children}</main>
         <Footer />
       </body>
     </html>

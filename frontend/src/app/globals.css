@@ -13,3 +13,15 @@ body {
 .tracking-tighest {
   letter-spacing: -2px;
 }
+
+@layer components {
+  .link-primary {
+    @apply hover:underline underline-offset-4 decoration-4 decoration-orange-600;
+  }
+}
+
+@layer components {
+  .slider-wrapper .slick-list .slick-track {
+    @apply my-0 mx-4;
+  }
+}
