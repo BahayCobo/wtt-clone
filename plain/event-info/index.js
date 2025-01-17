@@ -1,4 +1,3 @@
-document.getElementById("defaultOpen").click();
 function matchButton(event, tabName) {
     var i, tabcontent, tabs;
     tabcontent = document.getElementsByClassName("tab-content");
@@ -8,11 +7,11 @@ function matchButton(event, tabName) {
 
     tabs = document.getElementsByClassName("tab");
     for (i = 0; i < tabs.length; i++) {
-        tabs[i].classList.remove("active");
+        tabs[i].classList.remove("bg-blue-400");
     }
 
     document.getElementById(tabName).style.display = "block";
-    event.currentTarget.getElementsByClassName.add("active");
+    event.currentTarget.classList.add("bg-blue-400");
 }
 
 
