@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class=" flex gap-2 text-center text-xs p-2 pl-10 font-semibold border-b-2 md:text-lg pr-20  xl:text:2xl  ">
+        <button class="md:hidden lg:hidden">
+            < </button>
+                <p class="hover:text-blue-300 ">Overview</p>
+                <p class="hover:text-blue-300 ">Matches</p>
+                <p class="hover:text-blue-300 ">Draws</p>
+                <p class="hover:text-blue-300 ">Groups</p>
+                <p class="hover:text-blue-300 ">Player List</p>
+                <p class="hover:text-blue-300 ">Event Info</p>
+                <button class="md:hidden lg:hidden"> > </button>
+
+
+    </div>
+    <div class="font-bold text-3xl pl-5 pt-10 pb-10">
+        <p>WHO IS PLAYING</p>
+    </div>
+
+    <div class="text-xl gap-10 md:flex lg:flex ">
+
+        <div class="flex flex-col gap-4 border-dotted border-r-4">
+            <p class="tab pl-20 pr-20 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+                onclick="matchButton(event, 'mens')">Men's Singles</p>
+            <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+                onclick="matchButton(event, 'womens')">Women's Singles</p>
+            <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+                onclick="matchButton(event, 'mensd')">Men's Doubles</p>
+            <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+                onclick="matchButton(event, 'womensd')">Womens Doubles</p>
+            <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+                onclick="matchButton(event, 'mixed')">Mixed Doubles</p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+
+            <div id="mens" class="tab-content">
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/123980_HEADSHOT_R_Tomokazu_HARIMOTO.png">
+                        </div>
+                        <p> Tomokazu</p>
+                        <p>HARIMOTO</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/jp.png">JPN
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#3</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">4405 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/107028_Headshot_R_Dimitrij_OVTCHAROV.png">
+                        </div>
+                        <p> Dimitrij</p>
+                        <p>OVTCHAROV</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/de.png">GER
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#17</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1420 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/112092_Headshot_R_ARUNA_Quadri.png">
+                        </div>
+                        <p> Quadri</p>
+                        <p>ARUNA</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/ng.png">NGR
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#21</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1185 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/Headshot_R_XIANG_Peng.png">
+                        </div>
+                        <p> XIANG</p>
+                        <p>Peng</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/cn.png">CHN
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#22</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1139 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#4</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="womens" class="tab-content hidden">
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/133405_Headshot_R_ODO_Satsuki.png">
+                        </div>
+                        <p> Satsuki</p>
+                        <p>ODO</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/jp.png">JPN
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#7</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">2518 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/117820_Headshot_R_ HIRANO_Miu.png">
+                        </div>
+                        <p> Miu</p>
+                        <p>HIRANO</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/jp.png">JPN
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#12</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1753 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/121623_Headshot_R_TAKAHASHI_Bruna.png">
+                        </div>
+                        <p> Bruna</p>
+                        <p>TAKAHASHI</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/br.png">BRA
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#18</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1167 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between p-5 border-2 drop-shadow">
+
+                    <div class="font-bold text-lg ">
+                        <div style="cursor: pointer;">
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="images/131100_HEADSHOT_R_PAVADE_Prithika.png">
+                        </div>
+                        <p> Prithika</p>
+                        <p>PAVADE</p>
+                        <div class="flex align-middle gap-2">
+                            <img class="w-8 h-6"
+                                src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/fr.png">FRA
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <p>WR</p>
+                        <p class="text-5xl font-bold">#19</p>
+                        <div class="flex gap-2">
+                            <p class="font-bold">1162 </p>
+                            <p>Points </p>
+                        </div>
+                        <div class="flex gap-2 pt-2 text-end">
+                            <p>Seed</p>
+                            <p class="font-bold">#4</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="mensd" class="tab-content hidden">
+
+                <div class="flex p-5 gap-20 justify-between border-2 drop-shadow">
+                    <div class="flex gap-2 font-bold text-lg ">
+                        <div>
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/112620_Headshot_R_WONG_Chun_Ting.png">
+                            <p>WONG Chun</p>
+                            <p>Ting</p>
+                            <div class="flex align-middle gap-2">
+                                <img class="w-8 h-6"
+                                    src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/hkg.png">HKG
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                                src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/115543_Headshot_R_ DOO_Hoi_Kem.png">
+                            <p>DOO Hoi</p>
+                            <p>Kem</p>
+                            <div class="flex align-middle gap-2">
+                                <img class="w-8 h-6"
+                                    src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/hkg.png">HKG
+                            </div>
+                        </div>
+                        <div class="flex flex-col pt-12 items-end">
+                            <div class="flex gap-1">
+                                <p class="">CPR</p>
+                                <p>19</p>
+                            </div>
+                            <div class="flex gap-2 text-end">
+                                <p>Seed</p>
+                                <p class="font-bold">#1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
