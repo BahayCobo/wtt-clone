@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class=" flex gap-2 text-center text-xs p-2 pl-10 font-semibold border-b-2 md:text-lg pr-20  xl:text:2xl  ">
+    <button class="md:hidden lg:hidden">
+      < </button>
+        <p class="hover:text-blue-300 ">Overview</p>
+        <p class="hover:text-blue-300 ">Matches</p>
+        <p class="hover:text-blue-300 ">Draws</p>
+        <p class="hover:text-blue-300 ">Groups</p>
+        <p class="hover:text-blue-300 ">Player List</p>
+        <p class="hover:text-blue-300 ">Event Info</p>
+        <button class="md:hidden lg:hidden"> > </button>
+
+
+  </div>
+  <div class="font-bold text-3xl pl-5 pt-10 pb-10">
+    <p>WHO IS PLAYING</p>
+  </div>
+
+  <div class="text-xl gap-10 md:flex lg:flex ">
+
+    <div class="flex flex-col gap-4 border-dotted border-r-4">
+      <p class="tab pl-20 pr-20 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+        onclick="matchButton(event, 'mens')">Men's Singles</p>
+      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+        onclick="matchButton(event, 'womens')">Women's Singles</p>
+      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+        onclick="matchButton(event, 'mensd')">Men's Doubles</p>
+      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+        onclick="matchButton(event, 'womensd')">Womens Doubles</p>
+      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+        onclick="matchButton(event, 'mixed')">Mixed Doubles</p>
+    </div>
+
+    <div class="flex flex-col gap-5 x">
+
+      <div id="mens" class="tab-content">
+        <div class="flex justify-between p-5 border-2 drop-shadow">
+
+          <div class="font-bold text-lg ">
+            <div style="cursor: pointer;">
+              <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/123980_HEADSHOT_R_Tomokazu_HARIMOTO.png">
+            </div>
+            <p> Tomokazu</p>
+            <p>HARIMOTO</p>
+            <div class="flex align-middle gap-2">
+              <img class="w-8 h-6" src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/jp.png">JPN
+            </div>
+          </div>
+
+          <div class="flex flex-col items-end">
+            <p>WR</p>
+            <p class="text-5xl font-bold">#3</p>
+            <div class="flex gap-2">
+              <p class="font-bold">4405 </p>
+              <p>Points </p>
+            </div>
+            <div class="flex gap-2 pt-2 text-end">
+              <p>Seed</p>
+              <p class="font-bold">#1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex p-5 justify-between border-2 drop-shadow">
+
+        <div class="font-bold text-lg ">
+
+          <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+            src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/107028_Headshot_R_Dimitrij_OVTCHAROV.png">
+          <p> Dimitrij</p>
+          <p>OVTCHAROV</p>
+
+          <div class="flex align-middle gap-2">
+            <img class="w-8 h-6"
+              src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/de.png"></span></app-country-flag>
+            GER
+          </div>
+
+        </div>
+
+        <div class="flex flex-col text-end">
+          <p>WR</p>
+          <p class="text-5xl font-bold">#17</p>
+          <div class="flex gap-2">
+            <p class="font-bold">1420 </p>
+            <p>Points </p>
+          </div>
+          <div class="flex gap-2 text-end">
+            <p>Seed</p>
+            <p class="font-bold">#2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
