@@ -15,6 +15,9 @@ export default {
       fontSize: {
         xxs: ["8px", "12px"],
       },
+      backgroundImage: {
+        "event-background": "url('/events/bg-image.jpeg')",
+      },
     },
   },
   plugins: [],
