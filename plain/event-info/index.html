@@ -10,7 +10,8 @@
 
 <body>
 
-  <div class=" flex gap-2 text-center text-xs p-2 pl-10 font-semibold border-b-2 md:text-lg pr-20  xl:text:2xl  ">
+  <div
+    class=" flex flex-row gap-4 text-center text-[10px] p-2 pl-10 font-bold border-b-2 md:text-lg pr-20  xl:text-[20px] ">
     <button class="md:hidden lg:hidden">
       < </button>
         <p class="hover:text-blue-300 ">Overview</p>
@@ -27,26 +28,26 @@
     <p>WHO IS PLAYING</p>
   </div>
 
-  <div class="text-xl gap-10 md:flex lg:flex ">
+  <div class="md:flex gap-5">
+    <div class="text-xl gap-10">
 
-    <div class="flex flex-col gap-4 border-dotted border-r-4">
-      <p class="tab pl-20 pr-20 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
-        onclick="matchButton(event, 'mens')">Men's Singles</p>
-      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
-        onclick="matchButton(event, 'womens')">Women's Singles</p>
-      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
-        onclick="matchButton(event, 'mensd')">Men's Doubles</p>
-      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
-        onclick="matchButton(event, 'womensd')">Womens Doubles</p>
-      <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
-        onclick="matchButton(event, 'mixed')">Mixed Doubles</p>
+      <div class="flex flex-col gap-4 border-dotted border-r-4">
+        <p class="tab pl-20 pr-20 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+          onclick="matchButton(event, 'mens')">Men's Singles</p>
+        <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+          onclick="matchButton(event, 'womens')">Women's Singles</p>
+        <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+          onclick="matchButton(event, 'mensd')">Men's Doubles</p>
+        <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+          onclick="matchButton(event, 'womensd')">Womens Doubles</p>
+        <p class="tab p-15 pt-5 pb-5 text-center hover:text-white hover:bg-gray-500 "
+          onclick="matchButton(event, 'mixed')">Mixed Doubles</p>
+      </div>
     </div>
 
-    <div class="flex flex-col gap-5 x">
-
+    <div class="">
       <div id="mens" class="tab-content">
-        <div class="flex justify-between p-5 border-2 drop-shadow">
-
+        <div class="flex justify-between gap-20 p-5 border-2 drop-shadow">
           <div class="font-bold text-lg ">
             <div style="cursor: pointer;">
               <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
@@ -72,38 +73,47 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex p-5 justify-between border-2 drop-shadow">
+        <div>
+          <div class="flex p-5 gap-20 justify-between border-2 drop-shadow">
+            <div class="flex gap-2 font-bold text-lg ">
+              <div>
+                <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                  src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/112620_Headshot_R_WONG_Chun_Ting.png">
+                <p>WONG Chun</p>
+                <p>Ting</p>
+                <div class="flex align-middle gap-2">
+                  <img class="w-8 h-6" src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/hkg.png">HKG
+                </div>
+              </div>
+              <div>
 
-        <div class="font-bold text-lg ">
+                <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
+                  src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/115543_Headshot_R_ DOO_Hoi_Kem.png">
+                <p>DOO Hoi</p>
+                <p>Kem</p>
 
-          <img alt="Avatar" class="rounded-full size-20 p-0.5 object-cover object-top"
-            src="https://wttsimfiles.blob.core.windows.net/wtt-media/photos/400px/107028_Headshot_R_Dimitrij_OVTCHAROV.png">
-          <p> Dimitrij</p>
-          <p>OVTCHAROV</p>
+                <div class="flex align-middle gap-2">
+                  <img class="w-8 h-6" src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/hkg.png">HKG
+                </div>
+              </div>
 
-          <div class="flex align-middle gap-2">
-            <img class="w-8 h-6"
-              src="https://documentstore.ittf.com/websitefiles/assets/flags_normal/de.png"></span></app-country-flag>
-            GER
+              <div class="flex flex-col items-end">
+                <div class="flex gap-1">
+                  <p class="">CPR</p>
+                  <p>19</p>
+                </div>
+                <div class="flex gap-2 text-end">
+                  <p>Seed</p>
+                  <p class="font-bold">#1</p>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
 
-        <div class="flex flex-col text-end">
-          <p>WR</p>
-          <p class="text-5xl font-bold">#17</p>
-          <div class="flex gap-2">
-            <p class="font-bold">1420 </p>
-            <p>Points </p>
-          </div>
-          <div class="flex gap-2 text-end">
-            <p>Seed</p>
-            <p class="font-bold">#2</p>
-          </div>
-        </div>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
