@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { NavLink } from "@/components/Link";
 import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col text-white p-8 gap-8">
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
         <div className="flex flex-col gap-2 pl-1">
           <Image
             width={140}
@@ -44,7 +43,6 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col uppercase text-white gap-4 text-sm font-semibold">
-          <NavLink href="#" label="What is WTT" />
           <NavLink href="#" label="What is WTT" />
           <NavLink href="#" label="Host a WTT Event" />
           <NavLink href="#" label="Brand Partnerships" />
