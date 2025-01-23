@@ -1,68 +1,64 @@
 import Link from "next/link";
+import { NavLink } from "@/components/Link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col text-white p-8 gap-8">
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-2">
         <div className="flex flex-col gap-2 pl-1">
-          <img
-            className="w-[140px]"
+          <Image
+            width={140}
+            height={50}
+            alt="wtt logo"
             src="https://wttwebcmsprod.blob.core.windows.net/articledetailimages/WTT-Logo-New_d1b87297-2826-41e9-b469-7db1ac940ef2.png"
           />
           <p className="text-xs uppercase tracking-widest">
             ITTF Group
-            <span className="tracking-tighest">----------------------</span>
+            <span className="ml-2 tracking-tighest">
+              ----------------------
+            </span>
           </p>
           <div className="flex justify-start items-center gap-4">
-            <img
-              className="h-5 aspect-auto grayscale"
+            <Image
+              height={48}
+              width={48}
+              alt="wtt logo white"
+              className="aspect-auto grayscale"
               src="https://wttprod.blob.core.windows.net/images/logo/wtt_w_full_white_logo.png"
             />
-            <img
-              className="h-9 aspect-auto grayscale brightness-200"
+            <Image
+              width={32}
+              height={32}
+              alt="itff small logo"
+              className="grayscale brightness-200"
               src="https://wttwebcmsprod.blob.core.windows.net/websitefiles/assets/general/ITTF_small.png"
             />
-            <img
-              className="h-10 aspect-auto grayscale"
+            <Image
+              width={24}
+              height={24}
+              alt="ittf foundation logo"
+              className="grayscale"
               src="https://wttprod.blob.core.windows.net/images/logo/ittf_found_white.png"
             />
           </div>
         </div>
         <div className="flex flex-col uppercase text-white gap-4 text-sm font-semibold">
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            What is WTT
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Host a WTT Event
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Brand Partnerships
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Contact Us
-          </Link>
+          <NavLink href="#" label="What is WTT" />
+          <NavLink href="#" label="What is WTT" />
+          <NavLink href="#" label="Host a WTT Event" />
+          <NavLink href="#" label="Brand Partnerships" />
+          <NavLink href="#" label="Contact Us" />
         </div>
         <ul className="flex flex-col uppercase text-white list-none gap-4 text-sm font-semibold">
-          <li>Team</li>
-          <li>Careers</li>
-          <li>Technical Documents</li>
+          <NavLink href="#" label="Team" />
+          <NavLink href="#" label="Careers" />
+          <NavLink href="#" label="Technical Documents" />
         </ul>
         <ul className="flex flex-col uppercase text-white list-none gap-4 text-sm font-semibold">
-          <li>Terms and Conditions</li>
-          <li>Privacy Notice</li>
-          <li>Media Portal</li>
+          <NavLink href="#" label="Terms and Conditions" />
+          <NavLink href="#" label="Privacy Notice" />
+          <NavLink href="#" label="Media Portal" />
         </ul>
       </div>
       <div className="flex items-center justify-center gap-4">

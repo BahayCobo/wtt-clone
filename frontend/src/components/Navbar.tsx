@@ -1,54 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import { NavLink } from "@/components/Link";
 
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between m-4 mr-7">
       <div className="flex items-center">
-        <Image src="/wtt-logo.png" width={140} height={46} alt="WTT logo" />
+        <Link href="/">
+          <Image src="/wtt-logo.png" width={140} height={46} alt="WTT logo" />
+        </Link>
         <div className="hidden lg:flex pl-8 uppercase text-white gap-8 text-sm font-semibold">
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            News
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Videos
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Players
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Events
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Matches
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Rankings
-          </Link>
-          <Link
-            href="#"
-            className="hover:underline underline-offset-4 decoration-4 decoration-orange-600"
-          >
-            Watch Live
-          </Link>
+          <NavLink href="/news" label="News" />
+          <NavLink href="/videos" label="Videos" />
+          <NavLink href="/players" label="Players" />
+          <NavLink href="/events" label="Events" />
+          <NavLink href="/matches" label="Matches" />
+          <NavLink href="/rankings" label="Rankings" />
+          <NavLink href="/live" label="Watch Live" />
         </div>
       </div>
       <div className="hidden lg:block">

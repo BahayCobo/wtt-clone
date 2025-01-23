@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="bg-white py-5 px-3">
+    <main className="bg-white text-black py-5 px-3">
       {/* Title */}
       <div className="text-3xl font-extrabold">WORLD TABLE TENNIS PLAYERS</div>
       {/* Start Filters */}
