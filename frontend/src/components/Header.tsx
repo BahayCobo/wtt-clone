@@ -73,7 +73,7 @@ export default function Header() {
   const [show, setShow] = useState(true);
 
   return (
-    <header className="p-3 flex flex-col gap-2">
+    <header className="p-3 flex flex-col gap-2 relative">
       <div className="md:pl-8 flex gap-2 items-center justify-center md:justify-start">
         <QA title="Qatar" className="size-5" />
 

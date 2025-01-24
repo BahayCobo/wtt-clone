@@ -8,7 +8,7 @@ export function NavLink({ href, label }: { href: string; label: string }) {
   console.log("pathname", pathname, href);
   return (
     <Link
-      className={`hover:underline underline-offset-4 decoration-4 decoration-orange-600 ${
+      className={`shrink-0 hover:underline underline-offset-4 decoration-4 decoration-orange-600 ${
         pathname == href && "underline"
       }`}
       href={href}
