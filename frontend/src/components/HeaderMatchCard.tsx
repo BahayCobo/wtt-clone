@@ -3,7 +3,7 @@ import { Trophy } from "lucide-react";
 
 export default function HeaderMatchCard() {
   return (
-    <div className="p-1 bg-transparent flex-shrink-0 flex-grow-0 basis-auto min-w-0 w-fit max-w-full">
+    <div className="p-1 bg-transparent flex-shrink-0 flex-grow-0 basis-auto w-fit">
       <div className="flex w-72 p-2 rounded bg-white flex-col">
         <p className="text-xs font-semibold">Men&apos;s Doubles - Final</p>
         <p className="text-xxs">Lusail Sports Arena | Table 1</p>

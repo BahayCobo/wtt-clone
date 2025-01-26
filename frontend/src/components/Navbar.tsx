@@ -1,11 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { NavLink } from "@/components/Link";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useMediaQuery } from "@uidotdev/usehooks";
+
 import { usePathname } from "next/navigation";
 
 function MobileNavbar() {
@@ -39,14 +37,6 @@ function MobileNavbar() {
 }
 export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
-
-  // reset mobile nav visibility when screen goes larger than lg screen size
-  const isLgScreen = useMediaQuery("(min-width: 1024px)");
-  useEffect(() => {
-    if (isLgScreen) {
-      setShowMobileNav(false);
-    }
-  }, [isLgScreen]);
 
   // reset mobile nav visibility when route changes
   const pathname = usePathname();
@@ -93,12 +83,11 @@ export default function Navbar() {
           <Menu size={24} />
         </button>
       </div>
-      <div
-        className={`absolute top-full left-0 bg-black w-full h-fit z-50
-          ${showMobileNav ? "block" : "hidden"}`}
-      >
-        <MobileNavbar />
-      </div>
+      {showMobileNav && (
+        <div className="absolute top-full left-0 bg-black w-full h-fit z-50">
+          <MobileNavbar />
+        </div>
+      )}
     </nav>
   );
 }
