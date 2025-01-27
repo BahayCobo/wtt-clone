@@ -45,26 +45,27 @@ export default function Page() {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-row text-center p-4 justify-between bg-black text-white min-w-96 mt-5 mx-2 rounded-xl">
-            <div>
-              <p className="text-[56px] font-bold">13</p>
-              <p className="text-xs">Days</p>
-            </div>
-            <div>
-              <p className="text-[56px] font-bold">21</p>
-              <p className="text-xs">Hours</p>
-            </div>
-            <div>
-              <p className="text-[56px] font-bold">59</p>
-              <p className="text-xs">Minutes</p>
-            </div>
-            <div>
-              <p className="text-[56px] font-bold">00</p>
-              <p className="text-xs">Seconds</p>
+          <div className="">
+            <div className="flex flex-row text-center justify-between bg-black text-white mt-5 mx-5 rounded-xl min-w-96 p-4">
+              <div>
+                <p className="text-[56px] font-bold mt-2.5">13</p>
+                <p className="text-md font-bold text-[#a8dadc]">Days</p>
+              </div>
+              <div>
+                <p className="text-[56px] font-bold mt-2.5">21</p>
+                <p className="text-md font-bold text-[#a8dadc]">Hours</p>
+              </div>
+              <div>
+                <p className="text-[56px] font-bold mt-2.5">59</p>
+                <p className="text-md font-bold text-[#a8dadc]">Minutes</p>
+              </div>
+              <div>
+                <p className="text-[56px] font-bold mt-2.5">00</p>
+                <p className="text-md font-bold text-[#a8dadc]">Seconds</p>
+              </div>
             </div>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2  text-white mt-5 px-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2  text-white mt-5 px-2 md:grid-cols-2">
             <div className=" bg-[rgba(0,0,0,0.7)] mr-[10px]">
               <div className="flex flex-row justify-between mx-3 pt-6 border-b border-[#282828] py-[10px]  px-[15px]">
                 <p>Men&apos;s Singles</p>
@@ -157,7 +158,7 @@ export default function Page() {
           <div className="flex flex-row text-center p-4 justify-between bg-black text-white min-w-96 mt-5 mx-2 rounded-xl">
             <div>
               <p className="text-[56px] font-bold">13</p>
-              <p className="text-xs">Days</p>
+              <p className="text-xs font-bold">Days</p>
             </div>
             <div>
               <p className="text-[56px] font-bold">21</p>
